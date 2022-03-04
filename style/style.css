@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body, header, main, footer, nav, div, h1, h2, h3, h4, p, ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 149, 202);
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+main {
+    background-color: aquamarine;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+}
+
+footer {
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: rgb(224, 224, 224);
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 0.3rem;
+    margin-left: 2rem;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+footer li {
+    padding: 0.6rem 2rem 1rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.contacts {
+    padding: 1rem 3rem 0.3rem;
+}
+
+.contacts h4 {
+    margin-bottom: 0.3rem;
+}
+
+.contacts span {
+    margin-right: 3rem;
+}
+
+#localNav ul {
+    list-style-type: none;
+}
+
+#localNav a {
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 0.2rem 0.5rem;
+    margin-block: 2rem;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+a:hover, #localNav a:hover {
+    color: orangered;
+}
