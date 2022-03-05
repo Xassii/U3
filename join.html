@@ -22,7 +22,41 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <form id="join" method="post" data-netlify="true">
+            <fieldset>
+                <legend>Personuppgifter</legend>
+                <div>
+                    <label>Förnamn
+                        <input type="text" name="firstname" required>
+                    </label>
+                    <label>Efternamn
+                        <input type="text" name="lastname" required>
+                    </label>
+                    <label>Personnummer
+                        <input type="number" min="1000000000" max="999999999999" name="personalnumber" required>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Adress</legend>
+                <div>
+                    <label>Gata
+                        <input type="text" name="street" required>
+                    </label>
+                    <label>Ort
+                        <input type="text" name="place" required>
+                    </label>
+                    <label>Postnummer
+                        <input type="number" min="10000" max="99999" name="postalcode" required>
+                    </label>
+                </div>
+            </fieldset>
+            <div id="send">
+                <input type="submit" value="Skicka ansökan">
+            </div>
+        </form>
+    </main>
     <footer>
         <div class="contacts">
             <h4>Jävla välgörenhet</h4>
