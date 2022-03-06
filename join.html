@@ -10,64 +10,69 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <img src="img/tempicon.png" alt="Jävla välgörenhets logo">
-        <nav>
-            <ul>
-                <li><a href="report.pdf">Rapport</a></li>
-                <li><a href="/">Startsida</a></li>
-                <li><a href="about/">Om oss</a></li>
-                <li><a href="join.html">Bli medlem</a></li>
-                <li><a href="charity/">Vad vi gör</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form id="join" method="post" data-netlify="true">
-            <fieldset>
-                <legend>Personuppgifter</legend>
-                <div>
-                    <label>Förnamn
-                        <input type="text" name="firstname" required>
-                    </label>
-                    <label>Efternamn
-                        <input type="text" name="lastname" required>
-                    </label>
-                    <label>Personnummer
-                        <input type="number" min="1000000000" max="999999999999" name="personalnumber" required>
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Adress</legend>
-                <div>
-                    <label>Gata
-                        <input type="text" name="street" required>
-                    </label>
-                    <label>Ort
-                        <input type="text" name="place" required>
-                    </label>
-                    <label>Postnummer
-                        <input type="number" min="10000" max="99999" name="postalcode" required>
-                    </label>
-                </div>
-            </fieldset>
-            <div id="send">
-                <input type="submit" value="Skicka ansökan">
-            </div>
-        </form>
-    </main>
-    <footer>
-        <div class="contacts">
-            <h4>Jävla välgörenhet</h4>
-            <p><span>tel: +46 666 666 69</span><span>mail: javla.valgorenhet@6.66</span></p>
+    <div id="holder">
+        <header>
+            <img src="img/tempicon.png" alt="Jävla välgörenhets logo">
+            <h1>Jävla välgörenhet</h1>
+            <nav>
+                <ul>
+                    <li><a href="report.pdf">Rapport</a></li>
+                    <li><a href="/">Startsida</a></li>
+                    <li><a href="about/">Om oss</a></li>
+                    <li><a href="join.html" class="currentPage">Bli medlem</a></li>
+                    <li><a href="charity/">Vad vi gör</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="containsMain">
+            <main class="containsForm">
+                <form id="join" method="post" data-netlify="true">
+                    <fieldset>
+                        <legend>Personuppgifter</legend>
+                        <div>
+                            <label>Förnamn
+                                <input type="text" name="firstname" required>
+                            </label>
+                            <label>Efternamn
+                                <input type="text" name="lastname" required>
+                            </label>
+                            <label>Personnummer
+                                <input type="number" min="1000000000" max="999999999999" name="personalnumber" required>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adress</legend>
+                        <div>
+                            <label>Gata
+                                <input type="text" name="street" required>
+                            </label>
+                            <label>Ort
+                                <input type="text" name="place" required>
+                            </label>
+                            <label>Postnummer
+                                <input type="number" min="10000" max="99999" name="postalcode" required>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div id="send">
+                        <input type="submit" value="Skicka ansökan">
+                    </div>
+                </form>
+            </main>
         </div>
-        <ul>
-            <li><a href="about/">Om oss</a></li>
-            <li><a href="about/purpose.html">Syfte</a></li>
-            <li><a href="about/board.html">Styrelsen</a></li>
-            <li><a href="charity/donations.html">Donationer</a></li>
-        </ul>
-    </footer>
+        <footer>
+            <div class="contacts">
+                <h4>Jävla välgörenhet</h4>
+                <p><span>tel: +46 666 666 69</span><span>mail: javla.valgorenhet@6.66</span></p>
+            </div>
+            <ul>
+                <li><a href="about/">Om oss</a></li>
+                <li><a href="about/purpose.html">Syfte</a></li>
+                <li><a href="about/board.html">Styrelsen</a></li>
+                <li><a href="charity/donations.html">Donationer</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

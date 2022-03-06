@@ -10,38 +10,52 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <header>
-        <img src="../img/tempicon.png" alt="Jävla välgörenhets logo">
-        <nav>
-            <ul>
-                <li><a href="../report.pdf">Rapport</a></li>
-                <li><a href="../">Startsida</a></li>
-                <li><a href="../about/">Om oss</a></li> <!-- HUMMM... -->
-                <li><a href="../join.html">Bli medlem</a></li>
-                <li><a href="../charity/">Vad vi gör</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="localNav">
+    <div id="holder">
+        <header>
+            <img src="../img/tempicon.png" alt="Jävla välgörenhets logo">
+            <h1>Jävla välgörenhet</h1>
+            <nav>
+                <ul>
+                    <li><a href="../report.pdf">Rapport</a></li>
+                    <li><a href="../">Startsida</a></li>
+                    <li><a href="../about/" class="currentPage">Om oss</a></li> <!-- HUMMM... -->
+                    <li><a href="../join.html">Bli medlem</a></li>
+                    <li><a href="../charity/">Vad vi gör</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="containsMain">
+            <main class="containsLocalNav">
+                <div id="localNav">
+                    <ul>
+                        <li><a href="../about/">Om oss</a></li>
+                        <li><a href="purpose.html">Syfte</a></li>
+                        <li><a href="board.html" class="currentPage">Styrelsen</a></li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <img src="../img/martin_small.jpg" alt="Ordförande Martin">
+                    <img src="../img/elvira_small.jpg" alt="Kasören Elvira">
+                    <img src="../img/rune_small.jpg" alt="Sekreterare Rune">
+                    <img src="../img/linda_small.jpg" alt="Viseordförande Linda">
+                    <img src="../img/sara_small.jpg" alt="Sara">
+                    <img src="../img/sune_small.jpg" alt="Sune">
+                    <img src="../img/belsebub_small.jpg" alt="Belsebub">
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="contacts">
+                <h4>Jävla välgörenhet</h4>
+                <p><span>tel: +46 666 666 69</span><span>mail: javla.valgorenhet@6.66</span></p>
+            </div>
             <ul>
                 <li><a href="../about/">Om oss</a></li>
                 <li><a href="purpose.html">Syfte</a></li>
                 <li><a href="board.html">Styrelsen</a></li>
+                <li><a href="../charity/donations.html">Donationer</a></li>
             </ul>
-        </div>
-    </main>
-    <footer>
-        <div class="contacts">
-            <h4>Jävla välgörenhet</h4>
-            <p><span>tel: +46 666 666 69</span><span>mail: javla.valgorenhet@6.66</span></p>
-        </div>
-        <ul>
-            <li><a href="../about/">Om oss</a></li>
-            <li><a href="purpose.html">Syfte</a></li>
-            <li><a href="board.html">Styrelsen</a></li>
-            <li><a href="../charity/donations.html">Donationer</a></li>
-        </ul>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
