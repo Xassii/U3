@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*
-Kunde inte lista ut hur man får sidofoten att hålla sig längst ner på sidan oavsätt hur mycket innehåll sidan har så jag följde My Head Hurts svar på denna stackoverflow fråga:
+Tog hjälp av My Head Hurts svar på denna stackoverflow fråga för att plasera sidfoten korekt:
 https://stackoverflow.com/questions/8824831/make-div-stay-at-bottom-of-pages-content-all-the-time-even-when-there-are-scrol
 */
 
@@ -26,6 +26,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     padding: 1rem 3rem;
 }
 
@@ -49,9 +50,21 @@ footer {
 }
 
 h1 {
-    color: darkred;
+    color: maroon;
     font-family: cursive;
     text-shadow: 2px 2px 3px black;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-bottom: 0.3rem;
+}
+
+main p {
+    margin-bottom: 0.5rem;
 }
 
 nav ul, footer ul {
@@ -79,6 +92,29 @@ footer li {
 img {
     margin: 0.3rem 0.7rem;
     float: right;
+}
+
+fieldset {
+    background-color: rgb(58, 58, 58);
+    margin: 1rem 0rem;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset label {
+    border: solid white 2px;
+    background-color: black;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.3rem;
+}
+
+fieldset input {
+    width: fit-content;
 }
 
 .containsLocalNav {
@@ -150,8 +186,7 @@ div#content, main#content {
 }
 
 #localNav .currentPage, .currentPage {
-    color: crimson;
-    background-color: rgb(240, 132, 0);
+    background-color: gold;
 }
 
 a:hover, #localNav a:hover {
@@ -160,4 +195,9 @@ a:hover, #localNav a:hover {
 
 #localNav a:hover, nav a:hover {
     background-color: darkorange;
+}
+
+#send {
+    width: fit-content;
+    margin-left: auto;
 }
