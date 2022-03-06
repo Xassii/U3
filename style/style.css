@@ -1,17 +1,28 @@
 @charset "UTF-8";
 
+/*
+Kunde inte lista ut hur man får sidofoten att hålla sig längst ner på sidan oavsätt hur mycket innehåll sidan har så jag följde My Head Hurts svar på denna stackoverflow fråga:
+https://stackoverflow.com/questions/8824831/make-div-stay-at-bottom-of-pages-content-all-the-time-even-when-there-are-scrol
+*/
+
 body, header, main, footer, nav, div, h1, h2, h3, h4, p, ul {
     margin: 0%;
     padding: 0%;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 149, 202);
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: red;
 }
 
 header {
-    background-color: aqua;
+    background-color: crimson;
+    background-image: linear-gradient(0deg, red, crimson);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -19,20 +30,28 @@ header {
 }
 
 main {
-    background-color: aquamarine;
+    border-style: solid;
+    border-color: white;
     padding: 2rem 3rem;
-    display: grid;
-    grid-template-columns: min-content auto;
+    margin: 2px;
 }
 
 footer {
-    background-color: bisque;
-    position: fixed;
+    background-color: orange;
+    background-image: linear-gradient(0deg, darkorange, orange);
+    height: 6.8rem;
+    position: absolute;
     width: 100%;
-    bottom: 0%;
+    bottom: 0px;
     border-top-style: solid;
     border-width: 2px;
-    border-color: rgb(224, 224, 224);
+    border-color: chocolate;
+}
+
+h1 {
+    color: darkred;
+    font-family: cursive;
+    text-shadow: 2px 2px 3px black;
 }
 
 nav ul, footer ul {
@@ -42,29 +61,37 @@ nav ul, footer ul {
     justify-content: space-around;
 }
 
+a {
+    color: maroon;
+    text-decoration: none;
+}
+
 nav a {
-    display: block;
     padding: 0.3rem;
     margin-left: 2rem;
-    color: black;
     font-size: 1.2rem;
-    text-decoration: none;
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
 }
 
 footer li {
     padding: 0.6rem 2rem 1rem;
 }
 
-footer a {
-    color: black;
-    text-decoration: none;
+img {
+    margin: 0.3rem 0.7rem;
+    float: right;
+}
+
+.containsLocalNav {
+    display: grid;
+    grid-template-columns: min-content auto;
+}
+
+.floatLeft {
+    float: left;
 }
 
 .contacts {
+    color: maroon;
     padding: 1rem 3rem 0.3rem;
 }
 
@@ -76,22 +103,61 @@ footer a {
     margin-right: 3rem;
 }
 
+#holder {
+    min-height: 100%;
+    position: relative;
+}
+
+#containsMain {
+    padding-bottom: 7rem;
+}
+
+#content ul {
+    list-style-position: inside;
+    padding: 0.5rem;
+}
+
+#content > div {
+    padding: 1rem 0rem;
+    clear: both;
+}
+
+div#content, main#content {
+    margin: 0rem 3rem;
+}
+
 #localNav ul {
     list-style-type: none;
 }
 
-#localNav a {
+#localNav a, nav a {
     display: block;
-    color: black;
-    background-color: white;
+    background-color: orange;
+    border-style: solid;
+    border-color: maroon;
+    border-width: 2px;
+}
+
+#localNav a {
     padding: 0.2rem 0.5rem;
     margin-block: 2rem;
-    text-decoration: none;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-color: chocolate;
+}
+
+#localNav ul {
+    position: sticky;
+    top: 5rem;
+}
+
+#localNav .currentPage, .currentPage {
+    color: crimson;
+    background-color: rgb(240, 132, 0);
 }
 
 a:hover, #localNav a:hover {
-    color: orangered;
+    color: black;
+}
+
+#localNav a:hover, nav a:hover {
+    background-color: darkorange;
 }
